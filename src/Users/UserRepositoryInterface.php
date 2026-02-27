@@ -27,11 +27,11 @@ interface UserRepositoryInterface
     /**
      * Finds a user by the given primary key.
      *
-     * @param int $id
+     * @param string $id
      *
      * @return \Cartalyst\Sentinel\Users\UserInterface|null
      */
-    public function findById(int $id): ?UserInterface;
+    public function findById(string $id): ?UserInterface;
 
     /**
      * Finds a user by the given credentials.
