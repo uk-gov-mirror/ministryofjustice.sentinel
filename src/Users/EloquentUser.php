@@ -246,7 +246,7 @@ class EloquentUser extends Model implements PermissibleInterface, PersistableInt
     /**
      * {@inheritdoc}
      */
-    public function getUserId()
+    public function getUserId(): string
     {
         return $this->getKey();
     }

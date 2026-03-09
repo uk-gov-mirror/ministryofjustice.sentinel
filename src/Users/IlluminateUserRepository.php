@@ -67,7 +67,7 @@ class IlluminateUserRepository implements UserRepositoryInterface
     /**
      * {@inheritdoc}
      */
-    public function findById(int $id): ?UserInterface
+    public function findById(string $id): ?UserInterface
     {
         return $this->createModel()->newQuery()->find($id);
     }
@@ -320,13 +320,13 @@ class IlluminateUserRepository implements UserRepositoryInterface
      * Validates the user.
      *
      * @param array $credentials
-     * @param int   $id
+     * @param string   $id
      *
      * @throws \InvalidArgumentException
      *
      * @return bool
      */
-    protected function validateUser(array $credentials, int $id = null): bool
+    protected function validateUser(array $credentials, string $id = null): bool
     {
         $instance = $this->createModel();
 
