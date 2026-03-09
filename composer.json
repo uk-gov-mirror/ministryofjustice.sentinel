@@ -17,7 +17,7 @@
         }
     ],
     "require": {
-        "php": "^8.3",
+        "php": "^8.2",
         "cartalyst/support": "^9.0",
         "illuminate/support": "^12.0"
     },
